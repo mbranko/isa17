@@ -1,3 +1,3 @@
 # Internet softverske arhitekture
-# Primeri sa predavanja, jesen 2017.
+## Primeri sa predavanja, jesen 2017.
 
