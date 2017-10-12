@@ -1,5 +1,8 @@
 .gradle
 build/
+gradle/
+gradlew
+gradlew.bat
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -10,6 +13,8 @@ gradle-app.setting
 # Ignore IntelliJ-specific files
 .idea
 *.iml
+*.ipr
+*.iws
 
 # Ignore Eclipse-specific files
 bin/

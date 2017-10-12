@@ -1,0 +1,34 @@
+group 'isa17pr02'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+task server(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'pr02.ServerMain'
+    }
+    baseName = 'Server'
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
+
+task client(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'pr02.Client'
+    }
+    baseName = 'Client'
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
