@@ -26,9 +26,9 @@ Nakon toga se projekat može otvoriti u izabranom alatu i podešavanja za projek
 
 `rmiregistry -J-Djava.rmi.server.codebase=file://full-path-to-Server.jar`
 
-`java -jar build/libs/Server.jar`
+`java -Djava.security.policy=src/main/resources/server.policy -Djava.rmi.server.hostname=localhost -jar build/libs/Server.jar`
 
-`java -jar build/libs/Client.jar`
+`java -Djava.security.policy=src/main/resources/client.policy -jar build/libs/Client.jar`
 
 ## Sadržaj primera
 
