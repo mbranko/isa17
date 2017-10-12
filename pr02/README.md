@@ -20,9 +20,7 @@ Nakon toga se projekat može otvoriti u izabranom alatu i podešavanja za projek
 
 ## Bildovanje primera
 
-`gradle server`
-
-`gradle client`
+`gradle alljars`
 
 ## Pokretanje primera
 

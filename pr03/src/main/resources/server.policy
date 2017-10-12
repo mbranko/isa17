@@ -1,0 +1,7 @@
+grant {
+  // potrebno za uspostavljanje veze sa klijentom
+  permission java.net.SocketPermission "*:1024-65535", "connect,accept";
+  
+  // potrebno za ucitavanje klasa sa klijenta (RMI code download)
+  permission java.io.FilePermission "<<ALL FILES>>", "read";
+};

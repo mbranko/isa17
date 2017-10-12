@@ -1,0 +1,4 @@
+grant {
+  // potrebno za uspostavljanje veze sa serverom
+  permission java.net.SocketPermission "*:1024-65535", "connect";
+};
