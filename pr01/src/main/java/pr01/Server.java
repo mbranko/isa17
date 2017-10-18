@@ -14,7 +14,6 @@ class Server {
   private static final Logger logger = LoggerFactory.getLogger(Server.class);
 
   public static void main(String[] args) {
-    System.setProperty("java.net.preferIPv4Stack" , "true");
     try {
       ServerSocket ss = new ServerSocket(SERVER_PORT);
       logger.info("Listening for HTTP clients on " + SERVER_PORT);
