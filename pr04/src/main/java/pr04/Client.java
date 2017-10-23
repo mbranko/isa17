@@ -15,16 +15,25 @@ public class Client {
     InitialContext ctx = new InitialContext(properties);
 
     // pozovi stateless bean
+    System.out.println("==== STATELESS ====");
     Hello hello = (Hello) ctx.lookup("HelloBeanRemote");
     String response = hello.hello("Branko");
     System.out.println("Response: " + response);
 
     // pozovi stateful bean 10 puta
+    System.out.println("==== STATEFUL ====");
     Count c = (Count)ctx.lookup("CountBeanRemote");
     for (int i = 0; i < 10; i++) {
       System.out.println("count: " + c.count());
       Thread.sleep(100);
     }
 
+    // pozovi singleton bean 10 puta
+    System.out.println("==== SINGLETON ====");
+    SingletonCount sc = (SingletonCount)ctx.lookup("SingletonCountBeanRemote");
+    for (int i = 0; i < 10; i++) {
+      System.out.println("count: " + sc.count());
+      Thread.sleep(100);
+    }
   }
 }
