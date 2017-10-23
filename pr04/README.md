@@ -15,16 +15,31 @@ ili
 
 `gradle idea`
 
-Nakon toga se projekat može otvoriti u izabranom alatu i podešavanja za projekat će već biti inicijalizovana.
+Nakon toga se projekat može otvoriti u izabranom alatu i podešavanja za 
+projekat će već biti inicijalizovana.
 
 ## Bildovanje primera
 
-TODO
+`gradle alljars`
 
 ## Pokretanje primera
 
-TODO
+`java -jar build/libs/Server.jar`
+
+`java -jar build/libs/Client.jar`
 
 ## Sadržaj primera
 
-TODO
+Klasa `Server` inicijalizuje EJB kontejner koji će automatski prepoznati
+sve EJB komponente u classpath-u i registrovati ih. Klasa `Client` je
+klijentski program koji će pronaći tri *session bean* komponente i pozvati
+ih preko mreže.
+
+Tri *session bean* komponente su:
+
+* `HelloBean`: *stateless* komponenta koja vraća odgovor na poslati string
+* `CountBean`: *stateful* komponenta koja inkrementira brojač
+* `SingletonCountBean`: *singleton* komponenta koja inkremetira brojač 
+
+Klijentski program treba pozvati više puta i analizirati rezultate 
+izvršavanja.
