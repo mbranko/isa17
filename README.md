@@ -70,3 +70,13 @@ Spring komponente su u stanju da reaguju na par različitih
 događaja u toku svog životnog ciklusa. Spring će pozvati odgovarajuće
 metode, ako postoje, u datim trenucima životnog ciklusa.
 
+### Primer 08: EJB1 zove EJB2 uz ručnu uspostavu veze
+
+Jedan EJB može biti klijent za drugi. Dobijanje reference na drugi EJB može
+se obaviti na isti način na koji i klijenti to rade.
+
+### Primer 09: EJB1 zove EJB2 uz dependency injection
+
+Dobijanje reference na drugi EJB može se obaviti pomoću *dependency injection*
+mehanizma.
+
