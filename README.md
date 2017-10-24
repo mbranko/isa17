@@ -80,3 +80,7 @@ se obaviti na isti način na koji i klijenti to rade.
 Dobijanje reference na drugi EJB može se obaviti pomoću *dependency injection*
 mehanizma.
 
+### Primer 10: Dependency injection za Spring komponente
+
+Jedna Spring komponenta može dobiti referencu na drugu pomoću dependency 
+injection mehanizma. U ovom primeru koristi se *autowiring*.
