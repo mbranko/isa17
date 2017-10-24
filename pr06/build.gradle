@@ -13,7 +13,7 @@ repositories {
 
 task server(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'pr04.Server'
+        attributes 'Main-Class': 'pr06.Server'
     }
     baseName = 'Server'
     from {
@@ -24,7 +24,7 @@ task server(type: Jar) {
 
 task client(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'pr04.Client'
+        attributes 'Main-Class': 'pr06.Client'
     }
     baseName = 'Client'
     from {
