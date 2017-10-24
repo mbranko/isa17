@@ -1,0 +1,33 @@
+group 'pr07'
+
+buildscript {
+	ext {
+		springBootVersion = '1.5.8.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+
+repositories {
+	jcenter()
+}
+
+mainClassName = 'pr07.BeanLifeCycleApp'
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.apache.commons:commons-text:1.1')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
