@@ -84,3 +84,10 @@ mehanizma.
 
 Jedna Spring komponenta može dobiti referencu na drugu pomoću dependency 
 injection mehanizma. U ovom primeru koristi se *autowiring*.
+
+### Primer 11: EJB i AOP
+
+Na EJB session bean komponente može se primeniti aspekt-orijentisano 
+programiranje (AOP). U ovom primeru pokazano je kako se aspekt vezuje za
+EJB session bean.
+
