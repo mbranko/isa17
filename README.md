@@ -91,3 +91,8 @@ Na EJB session bean komponente može se primeniti aspekt-orijentisano
 programiranje (AOP). U ovom primeru pokazano je kako se aspekt vezuje za
 EJB session bean.
 
+### Primer 12: EJB i lifecycle callbacks sa ukusom AOP-a
+
+Primer rukovanja događajima životnog ciklusa EJB session beana na način sličan
+aspektima.
+
