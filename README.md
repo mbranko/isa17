@@ -96,3 +96,7 @@ EJB session bean.
 Primer rukovanja događajima životnog ciklusa EJB session beana na način sličan
 aspektima.
 
+### Primer 13: Spring AOP
+
+Primer pisanja aspekata u okviru Springa. Ilustrovano je pisanje *before*, 
+*after* i *around* saveta.
