@@ -1,5 +1,6 @@
 # Internet softverske arhitekture
-## Primeri sa predavanja, jesen 2017.
+
+## Konstrukcija servera i inverzija kontrole
 
 ### Primer 01: Primer HTTP servera
 
@@ -32,6 +33,8 @@ preneti programski kod sa klijenta na server.
 Da bi se sprečilo zlonamerno korišćenje ovih mogućnosti, potrebno je prvo
 uključiti `RMISecurityManager` a potom i konfigurisati klijentski i serverski
 program na odgovarajući način *prilikom pokretanja*.
+
+## Okruženja za serverske objekte
 
 ### Primer 04: EJB session beans
 
@@ -75,6 +78,8 @@ metode, ako postoje, u datim trenucima životnog ciklusa.
 Jedan EJB može biti klijent za drugi. Dobijanje reference na drugi EJB može
 se obaviti na isti način na koji i klijenti to rade.
 
+## Ubrizgavanje zavisnosti
+
 ### Primer 09: EJB1 zove EJB2 uz dependency injection
 
 Dobijanje reference na drugi EJB može se obaviti pomoću *dependency injection*
@@ -84,6 +89,8 @@ mehanizma.
 
 Jedna Spring komponenta može dobiti referencu na drugu pomoću dependency 
 injection mehanizma. U ovom primeru koristi se *autowiring*.
+
+## Aspekt-orijentisano programiranje
 
 ### Primer 11: EJB i AOP
 
@@ -100,3 +107,7 @@ aspektima.
 
 Primer pisanja aspekata u okviru Springa. Ilustrovano je pisanje *before*, 
 *after* i *around* saveta.
+
+## Pristup bazama podataka
+
+
