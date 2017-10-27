@@ -115,4 +115,14 @@ Primer pisanja aspekata u okviru Springa. Ilustrovano je pisanje *before*,
 Ilustrovano je slanje SELECT komandi i čitanje rezultata, slanje višestrukih
 INSERT naredbi pomoću `PreparedStatement` i pozivanje uskladištenih procedura.
 
+### Primer 15: Primer pristupa bazi podataka iz servleta
+
+Ovaj primer ilustruje naivni pokušaj da se konekcija sa bazom podataka otvori
+prilikom inicijalizacije servleta i koristi za svaku obradu zahteva. Pošto se
+zahtevi obrađuju u paralelnim nitima, ista konekcija bi bila korišćena u svim
+nitima, što nije dozvoljeno. Ovo je primer kako ne treba :)
+
+## Resource pooling
+
+
 
