@@ -140,5 +140,3 @@ bilo potrebno više instanci za obradu ovih zahteva ali i da su instance
 reciklirane. Kreiranje više niti ima za cilj simuliranje ponašanja više klijenata
 koji serveru pristupaju preko mreže.
 
-
-k
