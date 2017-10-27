@@ -110,4 +110,9 @@ Primer pisanja aspekata u okviru Springa. Ilustrovano je pisanje *before*,
 
 ## Pristup bazama podataka
 
+### Primer 14: Upotreba JDBC API za pristup relacionim bazama podataka
+
+Ilustrovano je slanje SELECT komandi i čitanje rezultata, slanje višestrukih
+INSERT naredbi pomoću `PreparedStatement` i pozivanje uskladištenih procedura.
+
 
