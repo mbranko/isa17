@@ -130,4 +130,15 @@ Prethodni primer je prerađen tako da se za svaku nit za obradu zahteva na serve
 koristi posebna konekcija, a konekcije se pri tome recikliraju u okviru
 connection pool strukture.
 
+### Primer 17: Resource pooling za stateless session EJBs
 
+Pokušavamo da nateramo server da upotrebi više od jedne instance stateless beana
+za obradu zahteva. U prvom pokušaju kada sekvencijalno više puta pozivamo bean 
+iz istog klijenta, vidimo da je jedna instanca dovoljna za obradu svih zahteva.
+U drugom pokušaju kreiramo 100 niti iz kojih zovemo session bean, i vidimo da je
+bilo potrebno više instanci za obradu ovih zahteva ali i da su instance 
+reciklirane. Kreiranje više niti ima za cilj simuliranje ponašanja više klijenata
+koji serveru pristupaju preko mreže.
+
+
+k
