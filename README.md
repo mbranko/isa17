@@ -124,5 +124,10 @@ nitima, što nije dozvoljeno. Ovo je primer kako ne treba :)
 
 ## Resource pooling
 
+### Primer 16: Pristup bazi iz web aplikacije uz connection pooling
+
+Prethodni primer je prerađen tako da se za svaku nit za obradu zahteva na serveru
+koristi posebna konekcija, a konekcije se pri tome recikliraju u okviru
+connection pool strukture.
 
 

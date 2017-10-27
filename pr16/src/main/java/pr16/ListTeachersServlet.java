@@ -1,4 +1,4 @@
-package pr15;
+package pr16;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -16,38 +16,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Ilustruje NEPRAVILAN pristup bazi podataka iz servleta.
+ * Ilustruje pravilan pristup bazi podataka iz servleta.
  */
 public class ListTeachersServlet extends HttpServlet {
 
-  /** 
-   * Inicijalizacija servleta: otvaranje veze sa bazom 
-   */
   public void init(ServletConfig config) throws ServletException {
     super.init(config);
-    try {
-      Class.forName("org.h2.Driver");
-      conn = DriverManager.getConnection(
-          "jdbc:h2:mem:test", "sa", "");
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
   }
   
-  /** 
-   * Unistavanje servleta: zatvaranje veze sa bazom 
-   */
-  public void destroy() {
-    try {
-      conn.close();
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
-  }
-
   public void doGet(HttpServletRequest req, HttpServletResponse res)
       throws ServletException, IOException {
     try {
+      // uzmi konekciju iz poola
+      Connection conn = ConnectionPool.getInstance().checkOut();
+
       // postavljanje upita
       String query = "select ime, prezime from nastavnici";
       Statement stmt = conn.createStatement();
@@ -72,6 +54,9 @@ public class ListTeachersServlet extends HttpServlet {
         out.println(imena.get(i) + " " + prezimena.get(i) + "<br>");
       out.println("</pre></body></html>");  
       out.flush();
+
+      // vrati konekciju u pool
+      ConnectionPool.getInstance().checkIn(conn);
     } catch (Exception ex) {
       // generisanje HTML stranice sa opisom greske
       res.setContentType("text/html");
@@ -83,8 +68,5 @@ public class ListTeachersServlet extends HttpServlet {
     }
   }
   
-  /** Konekcija sa bazom podataka */
-  private Connection conn;
-
   private static final long serialVersionUID = -5829052109034248195L;
 }

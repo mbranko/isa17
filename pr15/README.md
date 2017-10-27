@@ -30,7 +30,7 @@ Iz osnovnog foldera pokrenuti
 
 `gradle appRunWar`
 
-pa zatim otvoriti browser na adresi: http://localhost:8080/pr15/list
+pa zatim otvoriti browser na adresi (GET zahtev): http://localhost:8080/pr15/list
 
 ## Sadržaj primera
 
