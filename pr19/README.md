@@ -40,7 +40,6 @@ Klasa `Test` sadrži `main`. Otvara vezu sa bazom podataka, kreira inicijalnu
 šemu, kreira tri objekta u memoriji, snima objekte u bazu, pronalazi objekat
 u bazi po ID-u i ažurira objekat u memoriji i u bazi.
 
-
 Klasa `User` predstavlja model podataka sa kojim radi naš program. U ovom
 primeru, klasa je dopunjena metodama koje implementiraju standardne operacije
 prema bazi podataka.

@@ -147,4 +147,16 @@ koji serveru pristupaju preko mreže.
 Konzolni program kreira nekoliko objekata u memoriji, snima ih u relacionu bazu, 
 postavlja upite i ažurira učitane objekte.
 
+### Primer 19: Klasa koja ume da se snimi u bazu
+
+Program radi isto što i prethodni primer, samo je sada klasa User
+dopunjena implementacijom operacija prema bazi podataka tako da
+je "glavni program" sada daleko čitljiviji.
+
+### Primer 20: Anotacijama definisana perzistencija
+
+Elementarni primer mapiranja POJO klasa na relacionu bazu na osnovu anotacija.
+Koristi se JPA standard za objektno-relaciono mapiranje. 
+
+
 
