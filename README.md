@@ -158,5 +158,12 @@ je "glavni program" sada daleko čitljiviji.
 Elementarni primer mapiranja POJO klasa na relacionu bazu na osnovu anotacija.
 Koristi se JPA standard za objektno-relaciono mapiranje. 
 
+### Primer 21: Mapiranje veza između klasa
+
+Mapiranje objektnog modela koji se sastoji iz više povezanih klasa na relacionu 
+bazu. Test klasa ilustruje i rad sa objektima unutar i izvan sesije, odnosno 
+lazy/eager učitavanje kao i kaskadno upisivanje objekata u bazu.
+
+
 
 
