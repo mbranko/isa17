@@ -140,3 +140,11 @@ bilo potrebno više instanci za obradu ovih zahteva ali i da su instance
 reciklirane. Kreiranje više niti ima za cilj simuliranje ponašanja više klijenata
 koji serveru pristupaju preko mreže.
 
+## Objektno-relaciono mapiranje
+
+### Primer 18: Ručno snimanje Java objekata u relacionu bazu
+
+Konzolni program kreira nekoliko objekata u memoriji, snima ih u relacionu bazu, 
+postavlja upite i ažurira učitane objekte.
+
+
