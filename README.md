@@ -164,6 +164,8 @@ Mapiranje objektnog modela koji se sastoji iz više povezanih klasa na relacionu
 bazu. Test klasa ilustruje i rad sa objektima unutar i izvan sesije, odnosno 
 lazy/eager učitavanje kao i kaskadno upisivanje objekata u bazu.
 
+## Arhitekture web aplikacija
+
 ### Primer 22: Old school web app
 
 Primer web aplikacije koja čuva podatke u memoriji servera u različitim scope-ovima:
