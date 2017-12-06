@@ -1,0 +1,28 @@
+<md-card *ngIf="product">
+  <md-card-title>{{ product.name }}</md-card-title>
+  <md-card-subtitle><app-breadcrumb [product]="product"></app-breadcrumb></md-card-subtitle>
+  
+  <md-card-content>
+    <div class="table">
+      <div class="row">
+        <div class="cell">Proizvođač:</div>
+        <div class="cell">{{ product.vendor }}</div>
+      </div>
+      <div class="row">
+        <div class="cell">Cena:</div>
+        <div class="cell">{{ product.price }}</div>
+      </div>
+      <div class="row">
+        <div class="cell">Dobavljač:</div>
+        <div class="cell">{{ product.supplier.name }}</div>
+      </div>
+      <div class="row">
+        <div class="cell">Opis:</div>
+        <div class="cell">{{ product.description }}</div>
+      </div>
+    </div>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button (click)="buy(product)">KUPI</button>
+  </md-card-actions>
+</md-card>

@@ -1,0 +1,45 @@
+<md-card >
+  <div [hidden]="formStatus!='entry'">
+    <md-card-title>Podaci za plaćanje</md-card-title>
+    <form #cardForm="ngForm">
+      <div>
+        <md-input-container>
+          <input mdInput placeholder="Broj kartice" name="number" required [(ngModel)]="card.number" #name="ngModel"/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input mdInput placeholder="Ime i prezime" name="holderName" required [(ngModel)]="card.holderName" #name="ngModel"/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input mdInput placeholder="Mesec isteka" name="expiryMonth" type="number" min="01" max="12" required  [(ngModel)]="card.expiryMonth" #name="ngModel"/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input mdInput placeholder="Godina isteka" name="expiryYear" type="number" min="17" max="99" required  [(ngModel)]="card.expiryYear" #name="ngModel"/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input mdInput placeholder="CVC" name="cvc" type="number" min="100" max="999" required  [(ngModel)]="card.cvc" #name="ngModel"/>
+        </md-input-container>
+      </div>
+    </form>
+    <md-card-actions>
+      <button md-button (click)="submit()" [disabled]="!cardForm.form.valid">PLATI</button>
+    </md-card-actions>  
+  </div>
+  <div [hidden]="formStatus!='sending'">
+    <md-card-title>Šaljem zahtev za plaćanje...</md-card-title>
+  </div>
+  <div [hidden]="formStatus!='success'">
+    <md-card-title>Plaćanje uspešno :)</md-card-title>
+  </div>
+  <div [hidden]="formStatus!='fail'">
+    <md-card-title>Plaćanje neuspešno :(</md-card-title>
+  </div>
+</md-card>
+
