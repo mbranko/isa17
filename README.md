@@ -200,3 +200,9 @@ Ilustracija rada sa prirodnim i surogatnim primarnim ključevima u okviru JPA.
 
 Ilustracija rada sa *message-driven beans* preko *queue* i *topic* mehanizama za
 distribuciju poruka.
+
+### Primer 29: Asinhrono pozivanje metoda u Springu
+
+Primer pozivanja asinhronih metoda Spring beanova u slučajevima kada
+metoda ne vraća odnosno vraća rezultat.
+
