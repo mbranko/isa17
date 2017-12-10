@@ -188,3 +188,7 @@ Ilustruje tri mogućnosti za upravljanje transakcijama u okviru EJB komponenti:
 
 Ilustracija pesimističkog i optimističkog zaključavanja prilikom pristupa jednoj tabeli.
 
+### Primer 26: Mapiranje nasleđivanja na relacioni model
+
+Primer 4 različite mogućnosti za mapiranje nasleđivanja na relacioni model.
+

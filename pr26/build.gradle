@@ -1,4 +1,4 @@
-group 'isa17pr25'
+group 'isa17pr26'
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -11,7 +11,7 @@ repositories {
     jcenter()
 }
 
-mainClassName = 'pr25.Test'
+mainClassName = 'pr26.Test'
 
 jar {
     manifest {
