@@ -1,6 +1,6 @@
 # Različite strategije za izbor primarnog ključa
 
-TODO
+Ilustracija rada sa prirodnim i surogatnim primarnim ključevima u okviru JPA.
 
 ## Potrebne stvari
 

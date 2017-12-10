@@ -192,3 +192,11 @@ Ilustracija pesimističkog i optimističkog zaključavanja prilikom pristupa jed
 
 Primer 4 različite mogućnosti za mapiranje nasleđivanja na relacioni model.
 
+### Primer 27: Rukovanje prirodnim i surogatnim ključevima
+
+Ilustracija rada sa prirodnim i surogatnim primarnim ključevima u okviru JPA.
+
+### Primer 28: Asinhrono pozivanje koda za EJB
+
+Ilustracija rada sa *message-driven beans* preko *queue* i *topic* mehanizama za
+distribuciju poruka.
