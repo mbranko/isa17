@@ -15,6 +15,7 @@ gradle-app.setting
 *.iml
 *.ipr
 *.iws
+.ideaDataSources/
 
 # Ignore Eclipse-specific files
 bin/
