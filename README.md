@@ -171,3 +171,20 @@ lazy/eager učitavanje kao i kaskadno upisivanje objekata u bazu.
 Primer web aplikacije koja čuva podatke u memoriji servera u različitim scope-ovima:
 application, session, itd.
 
+### Primer 23: RESTful web app
+
+Primer web aplikacije koja čuva podatke u memoriji klijenta (web browsera) dok je
+server implementiran u skladu sa REST principima i ne čuva nikakvo stanje nijednog
+klijenta.
+
+### Primer 24: Container-managed vs bean-managed vs client-managed TX
+
+Ilustruje tri mogućnosti za upravljanje transakcijama u okviru EJB komponenti: 
+ * *container-managed*: deklarativno upravljanje transakcijama na osnovu anotacija od strane EJB kontejnera 
+ * *bean-managed*: programsko (ručno) upravljanje transakcijama od strane EJB komponente
+ * *client-managed*: programsko (ručno) upravljanje transakcijama od strane klijenta 
+
+### Primer 25: Pesimističko i optimističko zaključavanje
+
+Ilustracija pesimističkog i optimističkog zaključavanja prilikom pristupa jednoj tabeli.
+
