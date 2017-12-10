@@ -177,6 +177,8 @@ Primer web aplikacije koja čuva podatke u memoriji klijenta (web browsera) dok 
 server implementiran u skladu sa REST principima i ne čuva nikakvo stanje nijednog
 klijenta.
 
+## Rukovanje transakcijama
+
 ### Primer 24: Container-managed vs bean-managed vs client-managed TX
 
 Ilustruje tri mogućnosti za upravljanje transakcijama u okviru EJB komponenti: 
@@ -188,6 +190,8 @@ Ilustruje tri mogućnosti za upravljanje transakcijama u okviru EJB komponenti:
 
 Ilustracija pesimističkog i optimističkog zaključavanja prilikom pristupa jednoj tabeli.
 
+## Problemi O/R mapiranja
+
 ### Primer 26: Mapiranje nasleđivanja na relacioni model
 
 Primer 4 različite mogućnosti za mapiranje nasleđivanja na relacioni model.
@@ -195,6 +199,8 @@ Primer 4 različite mogućnosti za mapiranje nasleđivanja na relacioni model.
 ### Primer 27: Rukovanje prirodnim i surogatnim ključevima
 
 Ilustracija rada sa prirodnim i surogatnim primarnim ključevima u okviru JPA.
+
+## Asinhrono pozivanje koda
 
 ### Primer 28: Asinhrono pozivanje koda za EJB
 
@@ -205,4 +211,3 @@ distribuciju poruka.
 
 Primer pozivanja asinhronih metoda Spring beanova u slučajevima kada
 metoda ne vraća odnosno vraća rezultat.
-
