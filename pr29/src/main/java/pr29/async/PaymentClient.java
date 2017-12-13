@@ -20,10 +20,10 @@ public class PaymentClient {
     PaymentInfo msg2 = new PaymentInfo(CardType.VISA, "22222222", "2008/12",
         new BigDecimal("5324.33"));
 
-    System.out.println("[PaymentClient] Calling processPaymentOne with " + msg1);
+    System.out.println("[PaymentClient][" + Thread.currentThread().getName() + "] Calling processPaymentOne with " + msg1);
     paymentProcessor.processPaymentOne(msg1);
 
-    System.out.println("[PaymentClient] Calling processPaymentTwo with " + msg2);
+    System.out.println("[PaymentClient][" + Thread.currentThread().getName() + "] Calling processPaymentTwo with " + msg2);
     Future<String> future = paymentProcessor.processPaymentTwo(msg2);
     while (!future.isDone()) {
       Thread.sleep(500);

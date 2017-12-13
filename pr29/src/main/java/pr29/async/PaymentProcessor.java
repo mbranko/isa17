@@ -12,12 +12,12 @@ public class PaymentProcessor {
 
   @Async
   public void processPaymentOne(PaymentInfo paymentInfo) {
-    System.out.println("[PaymentProcessor.processPaymentOne]: " + paymentInfo);
+    System.out.println("[PaymentProcessor.processPaymentOne][" + Thread.currentThread().getName() + "]: " + paymentInfo);
   }
 
   @Async
   public Future<String> processPaymentTwo(PaymentInfo paymentInfo) {
-    System.out.println("[PaymentProcessor.processPaymentTwo]: " + paymentInfo);
+    System.out.println("[PaymentProcessor.processPaymentTwo][" + Thread.currentThread().getName() + "]: " + paymentInfo);
     return new AsyncResult<>("DEMO RESULT");
   }
 
