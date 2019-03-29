@@ -29,7 +29,7 @@ Iz osnovnog foldera pokrenuti
 
 `gradle run`
 
-Iz `src/main/frontend` foldera pokrenuti
+Iz `src/main/frontend2` foldera pokrenuti
 
 `ng serve`
 
